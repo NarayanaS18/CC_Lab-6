@@ -60,7 +60,6 @@ while (true) {
 
     send(client_fd, response.c_str(), response.size(), 0);
 
-    shutdown(client_fd, SHUT_RDWR);   // 🔥 important
     close(client_fd);
 }
     
